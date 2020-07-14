@@ -1,0 +1,154 @@
+
+body{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Roboto', sans-serif ;
+}
+.container{
+    padding: 20px;
+    margin: 0 auto;
+    background: #f0eded;
+    box-sizing: border-box;
+
+}
+.header{
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    text-align: center;
+}
+
+.product-item:hover > .product-img{
+    filter: brightness(50%);
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #aaaaaa;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(197, 194, 194);
+}
+.product-img{
+    display: block;
+    width: 300px;
+}
+
+.price:after, .sum:after{
+    content: " \20BD";
+}
+/*Basket*/
+.basket-window{
+    display: none;
+    border-radius: 10px;
+    background-color: rgba(231, 210, 171, 0.95);
+    position: absolute;
+    z-index: 9;
+    left: 500px;
+    width: 750px;
+}
+
+.up-basket{
+    padding-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-basket{
+    cursor: pointer;
+    margin: 0 0 34px 289px;
+    font-size: 26px;
+}
+
+.basket-h2{
+    text-align: center;
+}
+
+.header-basket{
+    display: flex;
+}
+
+.procts-name-in-basket{
+    font-size: 23px;
+    margin: 10px 570px 0 30px;
+
+}
+
+.id-el{
+    padding: 22px 7px 0 0;
+}
+
+.id-el:after{
+    content: ".";
+}
+
+.products-price{
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+.product-basket{    
+    display: flex;
+    font-size: 18px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(122, 121, 121) ;
+}
+
+.product-basket:last-child{
+    border: none;
+}
+
+.products-img-for-buing{
+    display: block;
+    width: 60px;
+    margin: 10px 0 10px 20px;
+}
+
+.product-basket-price{
+    font-size: 23px;
+    margin: 23px 0 23px auto;
+}
+
+.u-need-pay{
+    display: flex;
+    font-size: 23px;
+    justify-content: space-between;
+}
+
+.sum-price{
+    margin: 0 0 0 30px;
+}
+
+.sum{
+    margin: 0 30px 0 0;
+}
+
+.pay{
+    cursor: pointer;
+    margin: 50px 30px 30px 30px;
+    font-size: 23px;
+}
+
+.clear-basket{
+    cursor: pointer;
+    font-size: 23px;
+}
+
+/*Basket*/
