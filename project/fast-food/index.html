@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="burger">
+            <label for="small-burger" class="burger">Small Burger
+                <input id="small-burger" class="input-check" type="checkbox">
+            </label>
+
+            <p class="price">100</p>
+        </div>
+        <div class="burger">
+            <label for="big-burger" class="burger">Big Burger 
+                <input id="big-burger" class="input-check" type="checkbox">
+            </label>
+            <p class="price">200</p>
+            <ul class="list">
+                <li>
+                    <label class="choice">+Chees
+                        <input type="checkbox" class="input-check">
+                    </label>
+                    <p class="price">15</p>
+                </li>
+                <li>
+                    <label class="choice">
+                        +salad
+                        <input type="checkbox" class="input-check">
+                    </label>
+                    <p class="price">25</p>
+                </li>
+                <li>
+                    <label class="choice">
+                        +Potato
+                        <input type="checkbox" class="input-check">
+                    </label>
+                    <p class="price">20</p>
+                </li>
+                <li>
+                    <label class="choice">
+                        +paper
+                        <input type="checkbox" class="input-check">
+                    </label>
+                    <p class="price">10</p>
+                </li>
+                <li>
+                    <label class="choice">
+                        +sauce
+                        <input type="checkbox" class="input-check">
+                    </label>
+                    <p class="price">15</p>
+                </li>
+            </ul>
+        </div>
+        <p class="total-price"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
