@@ -27,6 +27,14 @@ Vue.component('cart', {
     },
     methods: {
         
+        showProd(item){
+            if(item.quantity == 0){
+                return false;
+            } else{
+                return true;
+            }
+        },
+
         addProduct(item){
             let find = this.cartItems.find(el => el.id_product === item.id_product);
             if(find){
@@ -98,7 +106,7 @@ Vue.component('cart', {
     template: `<div>
 <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
         <div class="cart-block" v-show="showCart">
-            <cart-item v-for="item of cartItems" :key="item.id_product" :img="item.img" :cart-item="item" @remove="remove">
+            <cart-item  v-for="item of cartItems" v-if="showProd(item)" :key="item.id_product" :img="item.img" :cart-item="item" @remove="remove">
             </cart-item>
         </div>
         </div>
